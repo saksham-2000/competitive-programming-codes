@@ -18,8 +18,8 @@ long long int powM(long long int a, long long int b, long long int m)
 
 
 const long long int mod = 998244353;  // mod = 2^23 *(119) + 1
-const long long int root = powM(3,119,mod);  // this is the primitive root.
-const long long int root_1 = powM(root,mod-2,mod); // inverse of primitive root.
+const long long int root = powM(3,119,mod);  // this is the 2^(kth) root of unity.
+const long long int root_1 = powM(root,mod-2,mod); // inverse of above.
 const long long int root_pw = 1 << 23;
 
 //const long long int mod = 7340033;
